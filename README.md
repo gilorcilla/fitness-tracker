@@ -1,2 +1,13 @@
-# fitness-tracker
-Fitness tracker to log multiple exercises in a workout on a given workout.
+# Fitness Tracker
+
+## Description
+
+## Deployed Site
+
+## Installation
+
+## Contribute
+
+## Test
+
+## License
