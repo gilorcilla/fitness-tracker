@@ -1,8 +1,15 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+//mongoose.connect("mongodb://localhost/workout", {
+//useNewUrlParser: true,
+//useFindAndModify: false,
+//});
+//tailor this base from mongodb URL
+mongoose.connect("mongodb://localhost/obscure-waters", {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false,
 });
 
