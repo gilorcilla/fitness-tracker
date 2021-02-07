@@ -28,3 +28,11 @@ mongoose.connect(
 );
 
 db.on("error", (error) => console.error(error));
+db.once("open", () => console.log("connection success"));
+
+app.use(htmlRouter);
+app.use(apiRouter);
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
+});
