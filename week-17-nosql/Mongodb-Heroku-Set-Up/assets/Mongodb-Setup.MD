@@ -23,3 +23,5 @@ You will choose a path, which will determine how your database are organized. Pi
 ## Allow Your IP Address: Finally allow your application be accessible from anywhere.
 
 ![IP address Setup](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/ip.png)
+
+That is it! Your account are all set-up, you can start creating production-ready database for deployment.
