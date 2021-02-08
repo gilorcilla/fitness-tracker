@@ -8,17 +8,17 @@ You will create a database for your application first.
 
     1.  You will see something like the following image:
 
-![clusters](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/clusters.png)
+![clusters](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/clusters.png)
 
     2.  Then, create a databse for your application, click the Collections button in your sandbox Clusters box.  If you have not created a database you will be taken to a page similar to the one below.
 
-![explore](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/clusters.png)
+![explore](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/clusters.png)
 
     3.  Provide a database name and a collection name, be creative of your naming convention.
 
     4.  When youre done creating your database and initial collection, the dashboard should looks like below.
 
-![dashboard](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/dashboard.png)
+![dashboard](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/dashboard.png)
 
 Cool! Your database has been set-up. Lets connect database to your application in production.
 
@@ -42,31 +42,31 @@ Initially, you will add the database's connection string to an environment varia
 
     3.  After logging-in navigate to the Settings tab on the right side of application's menu.  You will see a section "Config Vars" with a form to enter key/value field.  This area you will add your product database's information.  This time just type "MONGODb_URI in the key field.  For the value, we'll fetch the database connection string from MONGODB Atlas in the next step.  The image should look like below:
 
-![config](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/config.png)
+![config](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/config.png)
 
 ## Open Your MongoDB Atlas Dashboard
 
 Navigate to your MongoDB Atlas dashboard in a separate browser tab so you dont have to leave your Heroku page. Once there, locate the "Connect" button and click it. The image should like below.
 
-![connect](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/connect.png)
+![connect](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/connect.png)
 
 ## Modal Dialog of MongoDB
 
 Navigate to MongoDB Atlas connection interface dialog box, you should see three options shown below. Click on the "Connect your application" button.
 
-![connect](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/connect.png)
+![connect](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/connect.png)
 
 ## Database Connection
 
 Select the second option, "Connect your application". See below image.
 
-![connect](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/dialog.png)
+![connect](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/dialog.png)
 
 ## Copy Connection String
 
 Click the "Copy" button.
 
-![connect](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/datacon.png)
+![connect](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/datacon.png)
 
 With the connection string copied, navigate back to Heroku application settings and paste it into the "Value form field".
 
@@ -82,7 +82,7 @@ Dont forget to update the above "Value" with your password and database name.
 
 Then click on the "Add" button in the config bars. The resulting image should bear resemblance below.
 
-![connect](../week-17-nosql/Mongodb-Heroku-Set-Up/assets/add.png)
+![connect](./week-17-nosql/Mongodb-Heroku-Set-Up/assets/add.png)
 
 ## Update Application Code for MongoDB Connection
 
