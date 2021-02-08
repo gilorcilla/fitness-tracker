@@ -18,8 +18,8 @@ You will choose a path, which will determine how your database are organized. Pi
 
 ## Set Up Your Mongodb Atlas Dashboard
 
-[Set Up MongoDB Atlas](../week-17-nosql/idealsetup.png)
+![Set Up MongoDB Atlas](../week-17-nosql/idealsetup.png)
 
 ## Allow Your IP Address: Finally allow your application be accessible from anywhere.
 
-[IP address Setup](../week-17-nosql/ip.png)
+![IP address Setup](../week-17-nosql/ip.png)
