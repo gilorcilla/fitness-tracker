@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost/obscure-waters", {
 
 // const MongoClient = require("mongodb").MongoClient;
 // const uri =
-//   "mongodb+srv://dbadmin:*.DaScie6914!$@cluster0.06lnd.mongodb.net/<dbname>?retryWrites=true&w=majority";
+//   "mongodb+srv://dbadmin:<password>$@cluster0.06lnd.mongodb.net/<dbname>?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, { useNewUrlParser: true });
 // client.connect((err) => {
 //   const collection = client.db("test").collection("devices");
