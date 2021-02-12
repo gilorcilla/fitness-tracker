@@ -6,7 +6,7 @@ let db = require("../models");
 //useFindAndModify: false,
 //});
 //tailor this base from mongodb URL
-mongoose.connect("mongodb://localhost/obscure-waters", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -141,8 +141,8 @@ let workoutSeed = [
   },
 ];
 
-db.Workout.deleteMany({})
-  .then(() => db.Workout.collection.insertMany(workoutSeed))
+db.Exercise.deleteMany({})
+  .then(() => db.Exercise.collection.insertMany(workoutSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

@@ -4,7 +4,7 @@ const Exercise = require("../models/exerciseModel");
 
 router.get("/api/workouts", (req, res) => {
   console.log("Get route");
-  Exercise.find()
+  Exercise.find({})
     .then((data) => {
       console.log("data", data);
       res.json(data);
@@ -21,8 +21,9 @@ router.post("/api/workouts", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-router.post("/api/workouts/range", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
   Exercise.find({})
+    .limit(7)
     .then((data) => {
       console.log("PUT", data);
       res.json(data);
@@ -30,14 +31,14 @@ router.post("/api/workouts/range", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-router.post("/api/workouts/range", (req, res) => {
-  Exercise.create({})
-    .then((data) => {
-      console.log("PUT", data);
-      res.json(data);
-    })
-    .catch((err) => res.json(err));
-});
+// router.post("/api/workouts/range", (req, res) => {
+//   Exercise.create({})
+//     .then((data) => {
+//       console.log("PUT", data);
+//       res.json(data);
+//     })
+//     .catch((err) => res.json(err));
+// });
 
 router.put("/api/workouts/:id", ({ body, params }, res) => {
   console.log("PUT Route");
