@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "strength-tracker",
+		"path": "."
+	},
+	{
+		"name": "public",
+		"path": "../../du-den-fsf-pt-09-2020-u-c/Class-Content/17-NoSQL/02-Homework/Develop/public"
+	}
+],
+  "settings": {}
+}
